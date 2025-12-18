@@ -18,7 +18,7 @@ def install():
     """
     Download the example binary and make it executable
     """
-    os.system("sudo curl -L -o /usr/bin/example https://raw.githubusercontent.com/crust-project/car-binary-storage/main/examplepkg")
+    os.system("sudo curl -L -o /usr/bin/example https://raw.githubusercontent.com/redroselinux/car-binary-storage/main/examplepkg")
     os.system("sudo chmod +x /usr/bin/example")
 
 def postinst():
