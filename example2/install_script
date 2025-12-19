@@ -1,4 +1,4 @@
-car_deps = ["example"]
+car_deps = ["example", "example2"]
 
 def install():
   print("this is a dummy package")
