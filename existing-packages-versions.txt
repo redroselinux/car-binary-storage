@@ -16,3 +16,4 @@ cairo=1.17.8
 pango=1.50.0
 gdk-pixbuf=2.44.7
 gtk4=4.12.0
+zenity=4.2.1
