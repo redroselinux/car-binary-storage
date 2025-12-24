@@ -1,0 +1,9 @@
+version = "4.2.1"
+car_deps = []
+
+import os
+
+def install():
+  print(":: Downloading ninja from https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/ninja-bin")
+  os.system("curl -s -L -o /usr/bin/ninja https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/ninja-bin")
+  os.system("chmod +x /usr/bin/ninja")
