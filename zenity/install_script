@@ -1,5 +1,5 @@
 version = "4.2.1"
-car_deps = []
+car_deps = ["libadwaita"]
 
 import os
 
