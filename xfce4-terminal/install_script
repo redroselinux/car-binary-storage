@@ -1,0 +1,22 @@
+version = "1.1.5"
+car_deps = []
+
+import os
+
+def install():
+  print(":: Downloading xfce4-terminal from https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/xfce4terminal")
+  os.system("curl -s -L -o /usr/bin/xfce4-terminal https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/xfce4terminal")
+  os.system("chmod +x /usr/bin/xfce4-terminal")
+
+  print(":: Adding .desktop entry")
+  os.system('''
+echo "[Desktop Entry]
+Name=XFCE4 Terminal
+Comment=Use the XFCE Terminal
+Exec=/usr/bin/xfce4-terminal
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=Utility;TerminalEmulator;" > /usr/share/applications/xfce4-terminal.desktop
+''')
+  os.system("chmod 644 /usr/share/applications/xfce4-terminal.desktop")
