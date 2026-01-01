@@ -3,7 +3,10 @@ car_deps = []
 
 import os
 
+def beforeinst():
+    print(":: ninja is licensed under Apache-2.0")
+
 def install():
-  print(":: Downloading ninja from https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/ninja-bin")
-  os.system("curl -s -L -o /usr/bin/ninja https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/ninja-bin")
-  os.system("chmod +x /usr/bin/ninja")
+    print(":: Downloading ninja from https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/ninja-bin")
+    os.system("curl -s -L -o /usr/bin/ninja https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/ninja-bin")
+    os.system("chmod +x /usr/bin/ninja")
