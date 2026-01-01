@@ -3,13 +3,16 @@ car_deps = []
 
 import os
 
-def install():
-  print(":: Downloading xfce4-terminal from https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/xfce4terminal")
-  os.system("curl -s -L -o /usr/bin/xfce4-terminal https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/xfce4terminal")
-  os.system("chmod +x /usr/bin/xfce4-terminal")
+def beforeinst():
+    print(":: xfce4-terminal is licensed under GPL-2.0-or-later")
 
-  print(":: Adding .desktop entry")
-  os.system('''
+def install():
+    print(":: Downloading xfce4-terminal from https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/xfce4terminal")
+    os.system("curl -s -L -o /usr/bin/xfce4-terminal https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/xfce4terminal")
+    os.system("chmod +x /usr/bin/xfce4-terminal")
+
+    print(":: Adding .desktop entry")
+    os.system('''
 echo "[Desktop Entry]
 Name=XFCE4 Terminal
 Comment=Use the XFCE Terminal
@@ -19,4 +22,4 @@ Terminal=false
 Type=Application
 Categories=Utility;TerminalEmulator;" > /usr/share/applications/xfce4-terminal.desktop
 ''')
-  os.system("chmod 644 /usr/share/applications/xfce4-terminal.desktop")
+    os.system("chmod 644 /usr/share/applications/xfce4-terminal.desktop")
