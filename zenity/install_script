@@ -3,7 +3,10 @@ car_deps = ["libadwaita"]
 
 import os
 
+def beforeinst():
+    print(":: zenity is licensed under LGPL-2.1-or-later")
+
 def install():
-  print(":: Downloading zenity from https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/zenity-binary")
-  os.system("curl -s -L -o /usr/bin/zenity https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/zenity-binary")
-  os.system("chmod +x /usr/bin/zenity")
+    print(":: Downloading zenity from https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/zenity-binary")
+    os.system("curl -s -L -o /usr/bin/zenity https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/zenity-binary")
+    os.system("chmod +x /usr/bin/zenity")
