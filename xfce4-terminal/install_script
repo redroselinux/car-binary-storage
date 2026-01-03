@@ -2,6 +2,10 @@ version = "1.1.5"
 car_deps = []
 description = "Xfce4 Terminal emulator for the Xfce desktop"
 
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"}
+]
+
 import os
 
 def beforeinst():
