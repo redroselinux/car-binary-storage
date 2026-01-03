@@ -1,4 +1,6 @@
 car_deps = ["example", "example2"]
+version = "Version"
+description = "dummy testing package."
 
 def install():
   print("this is a dummy package")
