@@ -6,6 +6,10 @@ description = "Vim is a highly configurable text editor built to make creating a
 trusted = "True"
 version = "9.1.1577.source"
 
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"}
+]
+
 def beforeinst():
     print(":: Vim is licensed under the Vim license:")
     print("   https://www.gnu.org/licenses/vim-license.txt")
