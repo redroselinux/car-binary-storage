@@ -1,5 +1,6 @@
 version = "1.11.1"
 car_deps = []
+description = "A build system."
 
 import os
 
