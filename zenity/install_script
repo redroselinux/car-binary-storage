@@ -2,6 +2,10 @@ version = "4.2.1"
 car_deps = ["libadwaita"]
 description = "A tool to make dialogs very simple, made in GTK4."
 
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"}
+]
+
 import os
 
 def beforeinst():
