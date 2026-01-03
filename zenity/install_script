@@ -1,5 +1,6 @@
 version = "4.2.1"
 car_deps = ["libadwaita"]
+description = "A tool to make dialogs very simple, made in GTK4."
 
 import os
 
