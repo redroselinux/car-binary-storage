@@ -2,6 +2,10 @@ version = "1.11.1"
 car_deps = []
 description = "A build system."
 
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"}
+]
+
 import os
 
 def beforeinst():
