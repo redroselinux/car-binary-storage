@@ -1,12 +1,10 @@
 example=0.0.1
 example2=0.0.1
 crust=0.1.3
-reskin=will.be.edited.post.install
 vim-build=source
 vim=9.1.1577.source
 firefox=144.0.2
 fortisauris-terminal-lms=0.0.1
-gtk4=4.12.0
 zenity=4.2.1
 ninja=1.11.1
 xfce4-terminal=1.1.5
